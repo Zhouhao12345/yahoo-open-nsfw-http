@@ -1,0 +1,8 @@
+grpc_yahoo_nsfw:
+    build: .
+    ports:
+      - 50052:50052
+    volumes:
+      - ./grpc_server/data_pb2.py:/workspace/data_pb2.py
+      - ./grpc_server/data_pb2_grpc.py:/workspace/data_pb2_grpc.py
+      - ./grpc_server/http.py:/workspace/http.py
